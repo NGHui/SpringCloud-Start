@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8001
 
 #mybatis配置
 mybatis:
@@ -16,3 +16,10 @@ spring:
     url: jdbc:mysql://localhost:3306/db01?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false              # 数据库名称
     username: root
     password: huihui521
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:7001/eureka/
