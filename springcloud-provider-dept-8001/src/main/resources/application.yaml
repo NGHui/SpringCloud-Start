@@ -9,7 +9,7 @@ mybatis:
 
 spring:
   application:
-    name: microservicecloud-dept
+    name: springcloud-provider-dept-8001
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -20,6 +20,12 @@ spring:
 eureka:
   instance:
     hostname: localhost
+    instance-id: springcloud-provider-8001 #修改eureka注册中心的默认信息描述
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:7001/eureka/
+
+#info配置
+info:
+  app.name: hui-springcloud
+  company.name: hui

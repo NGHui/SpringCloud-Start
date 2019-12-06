@@ -23,6 +23,11 @@
             <artifactId>springcloud-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--actuator完善监控中心-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <!--数据库驱动jar-->
         <dependency>
             <groupId>mysql</groupId>
