@@ -1,0 +1,31 @@
+server:
+  port: 8002
+
+#mybatis配置
+mybatis:
+  type-aliases-package: com.hui.springcloud.pojo
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+spring:
+  application:
+    name: springcloud-provider-dept #注意配置集群时名字一定要保持一致
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
+    url: jdbc:mysql://localhost:3306/db02?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false              # 数据库名称
+    username: root
+    password: huihui521
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: springcloud-provider-8002 #修改eureka注册中心的默认信息描述
+  client:
+    service-url:
+      #defaultZone: http://${eureka.instance.hostname}:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+#info配置
+info:
+  app.name: hui-springcloud
+  company.name: hui

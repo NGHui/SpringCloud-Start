@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-7002/springcloud-eureka-7002.iml" filepath="$PROJECT_DIR$/springcloud-eureka-7002/springcloud-eureka-7002.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-7003/springcloud-eureka-7003.iml" filepath="$PROJECT_DIR$/springcloud-eureka-7003/springcloud-eureka-7003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-consumer-dept-80-feign/springcloud-consumer-dept-80-feign.iml" filepath="$PROJECT_DIR$/springcloud-consumer-dept-80-feign/springcloud-consumer-dept-80-feign.iml" />
     </modules>
   </component>
 </project>
