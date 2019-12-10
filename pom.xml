@@ -67,6 +67,12 @@
                 <artifactId>spring-cloud-starter-ribbon</artifactId>
                 <version>1.4.6.RELEASE</version>
             </dependency>
+            <!--Feign负载均衡-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-feign</artifactId>
+                <version>1.4.6.RELEASE</version>
+            </dependency>
             <!--数据库-->
             <dependency>
                 <groupId>mysql</groupId>
